@@ -1,0 +1,83 @@
+.top1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    background-color: whitesmoke;
+     width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+    /* ЗМІНЕНО ТУТ: Об'єднуємо анімації через кому */
+    /* CHANGED HERE: Combine animations with a comma */
+    animation: color1 10s infinite, border1 5s infinite; 
+    
+    color: rgb(243, 112, 232);
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 2px;
+
+}
+
+@keyframes color1 {
+    0% { color: rgb(240, 128, 128); }
+    25% { color: rgb(144, 238, 144); }
+    50% { color: rgb(173, 216, 230); }
+    75% { color: rgb(235, 91, 192); }
+    100% { color: rgb(224, 224, 102); }
+}
+
+@keyframes border1 {
+    0% { border-color: rgb(21, 82, 74); }
+    25% { border-color: rgb(177, 158, 231); }
+    50% { border-color: rgb(240, 93, 118); }
+    75% { border-color: rgb(0, 97, 100); }
+    100% { border-color: rgb(121, 151, 235); }
+}
+.top2 {
+    font-size: 20px;
+    text-align: left;
+    margin: 10px 0;
+    background-color: whitesmoke;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(100, 100, 100);
+    padding: 2px;
+}
+.created {
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 0;
+    background-color: whitesmoke;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(150, 150, 150);
+    padding: 2px;
+}
+.name {
+    font-weight: bold;
+    color: white;
+    animation: nameColor 5s infinite;
+}
+@keyframes nameColor {
+    0% { color: white; }
+    25% { color: pink; }
+    50% { color: lightpink; }
+    75% { color: lightblue; }
+    100% { color: red; }
+    }
+/* Робимо, щоб картинки підлаштовувалися під ширину блоку */
+.screenshots img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Заокруглені кути */
+}
+
+/* Розміщуємо скріншоти в ряд (якщо потрібно) */
+.screenshots {
+    display: flex;
+    gap: 10px;
+}
